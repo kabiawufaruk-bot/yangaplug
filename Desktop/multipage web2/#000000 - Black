@@ -1,0 +1,18 @@
+#000000 - Black
+#ffffFF - White
+#FF0000 - Red
+#00FF00 - green
+#0000FF - blue
+#461780
+
+R-red
+G-green
+B-blue
+
+RGB Colors - 0 means Empty (min), 255 means full (max)
+rgb(0, 0, 0) - Black
+rgb(255,255,255) - White
+rgb(255,0,0) - Red
+rgb(0,255,0) - Green
+rgb(0,0,255) - Blue
+rgb(70,23,128) - Custom

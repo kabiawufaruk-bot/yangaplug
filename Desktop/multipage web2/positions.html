@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+        <html lang="en">
+
+            <head>
+                <title>HTML Positions</title>
+                <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+                <style>
+                    * {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                    }
+
+                    body {
+                        font-family: Arial, sans-serif;
+                        line-height: 1.6;
+                        background-color: #f4f4f4;
+                        padding: 2rem;
+                    }
+
+                    .box {
+                       position: relative;
+                       background-color: firebrick;
+                       width: 2rem;
+                       min-height: 2rem;
+                       top: 0.6rem;
+                       left: 2rem;
+                    }
+
+                    .feature-container {
+                       background-color: lightgray;
+                       width: 20rem;
+                       height: 20rem;
+                       margin: 1rem;
+                       padding: 1rem;
+                       border: 1px solid grey;
+                       border-radius: 1rem;
+                       position: relative;
+                    }
+
+                    .feature-container img {
+                       width: 80px;
+                       border-radius: 0.5rem;
+                       margin-bottom: 0.8rem;
+                    }
+
+                    .feature-container h5 {
+                       margin-bottom: 0.5rem;
+                    }
+
+                    .badge {
+                     background-color: red;
+                     font-size: 0.8rem;
+                     color: white;
+                     padding: 2px 8px;
+                     display: inline-block;
+                     border-radius: 1.4rem;
+                     position: absolute;
+                     top: 1.2rem;
+                     right: 1rem;
+                    }
+
+                    .chat-us {
+                     display: inline-block;
+                     border-radius: 1rem;
+                     padding: 0.5rem 1rem;
+                     background-color: rgba(0, 128, 0, 0.922);
+                     color: white;
+                     font-weight: bold;
+                     position: fixed;
+                      bottom: 0.1rem;
+                     right: 1rem;
+                     }
+
+                     header {
+                       padding: 0.6rem 3rem;
+                       position: fixed;
+                       z-index: 999;
+                       background-color: white;
+                       border: 1px solid red;
+                       width: 100%;
+                       display: block;
+                       top: 0;
+                       display: flex;
+                       flex-direction: row;
+                       border-bottom: 1px red;
+                       justify-content: space-between;
+                       align-items: center;
+                      
+                        }
+
+                     header * {
+                        display: inline-block;
+                        }
+
+                        .ml-auto {
+                        margin-left: auto;
+                     }
+
+                     .flex {
+                        display: flex;
+                         }
+
+                         .item-center {
+                            align-items: center;
+                             }
+
+                             .logo-gap {
+                                gap: 0.2rem;
+                                 }
+
+                                 .nav-gap {
+                                    gap: 1.2rem;
+                                     }
+
+                                     .no-decoration {
+                                        text-decoration: none;
+                                        }
+
+                                        .foreground-black {
+                                            color: #000000;
+                                             }
+
+                                     .nav-item {
+                                        text-decoration: none
+                                       color #000000
+                                        padding 3px 10px;
+                                            border-radius: 5px;
+                                            /* transition: background-color 0.3s ease; */
+                                            /* transition: color 0.3s ease; */
+                                            transition: all 0.3s ease;
+                                           
+                                            
+                                         }
+
+                                         .nav-item:hover {
+                                            color: white;
+                                            padding: 20px;
+                                            background-color: red;
+                                            
+                                            }
+
+                                            .nav-item :active{
+                                                color: rgb #ff0000;
+                                                 }
+
+                                            .input:focus{
+                                                border: 1px blue solid;
+                                                }
+
+                                                li:first-child a {
+                                                    background-color: green;
+
+                                                    }
+
+                                                    li:last-child a {
+                                                        background-color: goldenrod;
+
+                                                         }
+
+                                                         li:nth-(child3) a {
+                                                            background-color: violet;
+
+                                                             }
+
+                                                             .gap-sm {
+                                                                gap: 0.6rem;
+                                                                 }
+
+                                                                 .container {
+                                                                  padding: 0px 4rem;
+                                                                  margin-top: 1rem;
+                                                                    display: grid;
+                                                                    /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+                                                                    /* grid-template-columns: 250px 1fr 1fr 1fr; */
+                                                                     grid-template-columns: 1fr 1fr 1fr 1fr;
+                                                                    gap: 10px 6px;
+                                                                    /* row-gap: 60px; */
+                                                                    /* column-gap: 20px; */
+                                                                     }
+
+                                                                     .container div{
+                                                                       background-color: #ff3256;
+                                                                       color: #f4f4f4;
+                                                                       text-align: center;
+                                                                       padding: 1rem 0;
+                                                                       border-radius: 0.4rem;
+                                                                        }
+
+                                                                        .container-item5{
+                                                                           grid-column: span3;
+                                                                           }
+                                                                           
+                                                                            
+                                                    
+
+                                     </style>
+                                      </head>
+
+                <body>
+                    <header>
+                        <a href="/index.html" class="flex item-center logo-gap no-decoration foreground-black">
+                        <img src="https://s3-alpha.figma.com/hub/file/1913095808/a7bdc469-cd70-4ea1-bb57-b59204ad8182-cover.png" alt="brandlogo" width="100px"
+                        <p></p>Yanga Plug</p>
+                        </div>
+                        <nav>
+                            <ul class="flex nav-gap item-center">
+                                <li>
+                             <a href ="#" class="nav-item no-decoration">Home</a>
+                                </li>
+                                <li>
+                           <a href="about.html" class="nav-item no-decoration">About Us</a>
+                           </li>
+                           <li>
+                             <a href="Contact Us.html" class="nav-item no-decoration">Contact Us</a>
+                    </li>
+                    <li>
+                     <a href="Contact Us.html" class="nav-item no-decoration">Last Child</a>
+                     </li>
+                     </ul>
+                     </nav>
+                        <p>Some Navs</p>
+                        <p>Some CTA</p>
+                        </header>
+                        <div style="margin-top: 3rem;">
+                        <p>In dolore id in esse. Ea anim dolor qui voluptate sunt laborum dolor et aliquip ex reprehenderit est do proident. Aute incididunt in ad aute. Ex eiusmod eiusmod occaecat occaecat ut incididunt magna eu deserunt exercitation irure anim ut. Tempor esse esse deserunt dolor. Excepteur cupidatat consectetur officia labore aute ipsum in velit. Adipisicing aliquip aliquip ea aute eiusmod eu.</p>
+                    </div>
+                    <div style="position: relative; border: 1px solid blue; padding: 1rem;">
+                         <div class="box">
+
+                        </div>
+                        <div class="feature-container">
+                            <img src="https://images.unsplash.com/photo-1773332611612-ffdaa753afb1?q=80&w=774&auto=format&fit=crop" alt="Fast Internet">
+                            <h5>Fast Internet</h5>
+                            <p>Nisi pariatur id excepteur irure ut officia sit magna.Mollit labore ad minim nulla magna culpa proident ex enim veniam dolore duis.</p>
+                                <div class="badge">🔥hot</div>
+                                  </div>
+
+                                  <input placeholder="Enter your name">
+                                  <input type="email" placeholder="Enter your email">
+                                  <input type="tel" placeholder="Enter your phone number">
+                          </div>
+                         
+                          <div class="chat-us flex gap-sm ">
+                             <i class="hgi hgi-stroke hgi-rounded hgi-message-02"></i> Chat Us
+                              </div>
+
+                              <div class="container">
+                              <div>Item 1</div>
+                               <div>Item 2</div>
+                              <div>Item 3</div>
+                              <div>Item 4</div>
+                              <div>Item 5</div>
+                              <div>Item 6</div>
+                              <div>Item 7</div>
+                               <div>Item 8</div>
+                              <div>Item 9</div>
+                              <div>Item 10</div>
+                              <div>Item 11</div>
+                              <div>Item 12</div>
+                              </div>
+                        </body>
+
+                </html>
